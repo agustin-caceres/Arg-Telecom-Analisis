@@ -1,0 +1,5 @@
+# Ignorar datasets
+datasets/
+
+# Ignorar el entorno virtual
+proyectoII_env/
