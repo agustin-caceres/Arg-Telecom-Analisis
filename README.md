@@ -19,6 +19,7 @@ El análisis incluye:
 - **📁 Dashboard/**:
   - Dashboard interactivo creado con Streamlit.
   - Archivo shapefile con el mapa de Argentina necesario para el dashboard en gráficos de mapa.
+- **📁 assets/: contiene la imagen ERD.
 - **📝 LICENSE**: Contiene la licencia MIT bajo la cual se distribuye este proyecto.
 
 ## 🎯 **KPIs Definidos**
@@ -77,7 +78,8 @@ La base de datos creada en **PostgreSQL** será la fuente de este proyecto. Fue 
 
 La siguiente imagen muestra el modelo entidad-relación (ERD). Este modelo ilustra cómo están estructuradas las tablas y las relaciones entre ellas:
 
-![Modelo ERD de la Base de Datos](../Untitled.png)
+![Modelo ERD de la Base de Datos](assets\Untitled.png)
+
 
 ### 🗄️ **Tablas Principales:**
 
