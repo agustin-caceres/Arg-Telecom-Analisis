@@ -43,39 +43,38 @@ El análisis incluye:
 **Explicación:** Este KPI está orientado a fomentar la adopción de líneas pospago en Argentina, un tipo de servicio que tiende a ofrecer mejor calidad de servicio y estabilidad en la conectividad. Se realizó un análisis de la evolución trimestral de los accesos pospago y se proyectó un aumento del 5% para el tercer trimestre de 2024, basado en las tendencias históricas.
 
 ## **📋 Conclusiones y Recomendaciones sobre los KPIs**
-### **KPI 1: Aumentar el acceso a Internet en un 2% por provincia**
 
-**Conclusión:** 
+### **📈 KPI 1: Aumentar el acceso a Internet en un 2% por provincia**
 
-El análisis de la penetración de internet muestra que algunas provincias ya han experimentado un crecimiento estable en los últimos años. Sin embargo, regiones como el NEA y NOA requieren de objetivos más profundos que alcanzar un aumento del 2% trimestral.
+**📝 Conclusión:**
 
-**Recomendación:** 
+El análisis de la penetración de internet muestra que algunas provincias ya han experimentado un crecimiento estable en los últimos años. Sin embargo, regiones como el NEA y NOA requieren de **objetivos más profundos** que alcanzar un aumento del 2% trimestral.
 
-Para cerrar la brecha digital, es fundamental implementar **estrategias regionales específicas** que incluyan incentivos a proveedores de servicios de internet para expandir su cobertura en áreas rurales y menos conectadas. Dichas estrategias podrían basarse en subsidios o financiamiento público-privado para acelerar el desarrollo.
+**💡 Recomendación:**
 
-### **KPI 2: Aumentar la cobertura de Fibra Óptica en un 10% en las provincias con menor cobertura**
+Para  **cerrar la brecha digital** , es fundamental implementar **estrategias regionales específicas** que incluyan **incentivos** a proveedores de servicios de internet para expandir su cobertura en áreas rurales y menos conectadas. Dichas estrategias podrían basarse en **subsidios o financiamiento público-privado** para acelerar el desarrollo.
 
-**Conclusión:** 
+### **🌍 KPI 2: Aumentar la cobertura de Fibra Óptica en un 10% en las provincias con menor cobertura**
 
-Hay un gran porcentaje de provincias con poca cobertura de Fibra Óptica. Aumentar la cobertura en estas áreas debe ser una prioridad para cerrar la brecha de conectividad con **enfoques ajustados a las situaciones de cada provincia** para garantizar una distribución más eficiente de los recursos e inversiones. 
+**📝 Conclusión:**
 
-**Recomendación:** 
+Hay un gran porcentaje de provincias con  **poca cobertura de Fibra Óptica** . Aumentar la cobertura en estas áreas debe ser una prioridad para cerrar la brecha de conectividad con **enfoques ajustados** a las situaciones de cada provincia, para garantizar una distribución más eficiente de los recursos e inversiones.
 
-Se sugiere la implementación de un programa escalonado ajustado al contexto de cada provincia para reducir la brecha de conectividad. El aumento proyectado del 10% logra incrementar la cobertura en todas las provincias seleccionadas, pero no lo suficiente como para llevar a ninguna a una cobertura mayoritaria. 
+**💡 Recomendación:**
 
-Esto refuerza la necesidad de una inversión considerable a largo plazo para mejorar la infraestructura de fibra óptica, especialmente en las provincias más rezagadas.
+Se sugiere la implementación de un **programa escalonado** ajustado al contexto de cada provincia para reducir la brecha de conectividad. El aumento proyectado del 10% logra incrementar la cobertura en todas las provincias seleccionadas, pero **no es suficiente** como para llevar a ninguna a una cobertura mayoritaria.
 
-### **KPI 3: Incrementar en un 5% el acceso a líneas pospago**
+Esto refuerza la **necesidad de inversión a largo plazo** para mejorar la infraestructura de fibra óptica, especialmente en las provincias más rezagadas.
 
-**Conclusión:** 
+### **📞 KPI 3: Incrementar en un 5% el acceso a líneas pospago**
 
-El acceso a líneas pospago ha mostrado un crecimiento constante, pero los planes prepagos siguen siendo la tendencia, debido a la flexibilidad financiera que ofrecen. El aumento proyectado del 5% es una dirección correcta a seguir manteniendo el crecimiento, pero la necesidad de **adoptar programas más llamativos** para atraer a los clientes prepagos es una necesidad para lograr reducir la brecha entre usuarios prepagos y pospagos.
+**📝 Conclusión:**
 
-**Recomendación:** 
+El acceso a líneas pospago ha mostrado un  **crecimiento constante** , pero los planes prepagos siguen siendo la tendencia, debido a la **flexibilidad financiera** que ofrecen. El aumento proyectado del 5% es una  **dirección correcta** , pero se necesita **adoptar programas más atractivos** para atraer a los clientes prepagos y reducir la brecha entre usuarios prepagos y pospagos.
 
-Para incrementar la adopción de líneas pospago, es necesario ofrecer planes más flexibles y personalizados que puedan adaptarse a las necesidades económicas de las zonas rurales. Incluir beneficios adicionales como descuentos en servicios y mayor conectividad a internet son incentivos que pueden ayudar a fomentar la adopción de estos planes.
+**💡 Recomendación:**
 
----
+Para incrementar la adopción de líneas pospago, es necesario ofrecer **planes más flexibles y personalizados** que puedan adaptarse a las necesidades económicas de las zonas rurales. Incluir **beneficios adicionales** como descuentos en servicios y mayor conectividad a internet son incentivos que pueden ayudar a fomentar la adopción de estos planes.
 
 ## 🔄 **Proceso ETL**
 
@@ -112,7 +111,6 @@ La base de datos creada en **PostgreSQL** será la fuente de este proyecto. Fue 
 La siguiente imagen muestra el modelo entidad-relación (ERD). Este modelo ilustra cómo están estructuradas las tablas y las relaciones entre ellas:
 
 ![Modelo ERD de la Base de Datos](assets/Untitled.png)
-
 
 ### 🗄️ **Tablas Principales:**
 
