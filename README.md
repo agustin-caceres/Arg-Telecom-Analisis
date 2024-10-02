@@ -18,11 +18,13 @@ El análisis incluye:
   - Creación de la Base de Datos SQL
 - **📁 Dashboard/**:
   - Dashboard interactivo creado con Streamlit.
-  - Archivo shapefile con el mapa de Argentina necesario para el dashboard en gráficos de mapa.
+  - Archivo GeoJSON con el mapa de Argentina necesario en gráficos de mapa.
 - **📁 assets/: contiene la imagen ERD.
 - **📝 LICENSE**: Contiene la licencia MIT bajo la cual se distribuye este proyecto.
 
 ## 🎯 **KPIs Definidos**
+
+![KPIs](assets/KPIs.png)
 
 ### **📈 KPI 1: Aumentar el acceso a Internet en un 2% por provincia**
 
