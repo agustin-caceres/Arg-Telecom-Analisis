@@ -6,3 +6,9 @@ proyectoII_env/
 
 # dashboard Power BI
 Presentación_KPIs.pbix
+
+# normalizarGeoJSON:
+normalizarGeoJSON.ipynb
+
+# Mapa:
+dashboard/Mapa
