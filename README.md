@@ -78,7 +78,7 @@ La base de datos creada en **PostgreSQL** será la fuente de este proyecto. Fue 
 
 La siguiente imagen muestra el modelo entidad-relación (ERD). Este modelo ilustra cómo están estructuradas las tablas y las relaciones entre ellas:
 
-![Modelo ERD de la Base de Datos](assets\Untitled.png)
+![Modelo ERD de la Base de Datos](assets/Untitled.png)
 
 
 ### 🗄️ **Tablas Principales:**
