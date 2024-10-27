@@ -7,7 +7,7 @@ def display():
 
     # Cargar los datos de cobertura de fibra óptica
     df_cobertura = cargar_datos_cobertura_fibra()
-    geojson_path = 'Streamlit/ProvinciasArgentina_actualizado.geojson'
+    geojson_path = 'Dashboard_Streamlit/ProvinciasArgentina_actualizado.geojson'
 
     # Primer gráfico: porcentaje de localidades con fibra óptica por provincia
     st.subheader("Porcentaje de Localidades con Fibra Óptica por Provincia")
