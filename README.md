@@ -213,7 +213,7 @@ git clone https://github.com/agustin-caceres/Proyecto-Data-Analyst
 
 ## **👨‍💻 Autor**
 
-Este análisis fue desarrollado por **Agustín Cáceres** como parte de las instancias finales de evaluación de la **carrera Data Science** que brinda la **academia Henry**.
+Este análisis fue desarrollado por **Agustín Cáceres.** 
 
 Si tienes alguna pregunta o deseas discutir más sobre este proyecto, no dudes en contactarme a través de mi perfil en LinkedIn:
 
