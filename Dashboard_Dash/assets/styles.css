@@ -59,6 +59,65 @@ body {
 }
 
 /* -------------------------------------------------------------
+    Estilos Generales para los Contenedores de Gráficos
+------------------------------------------------------------- */
+
+/* Contenedor de gráficos estilo tarjeta */
+.graph-container {
+    background: linear-gradient(45deg, #0c0e22, #1c1d38); /* Fondo degradado */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para efecto de profundidad */
+    margin-bottom: 20px; /* Espacio inferior para separar las tarjetas */
+    transition: transform 0.3s ease; /* Suave efecto al pasar el mouse */
+    display: inline-block;
+    width: 100%; /* Asegura que ocupe el ancho disponible */
+    padding: 10px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho total */
+    position: relative; /* Importante para posicionar el botón */
+}
+
+/* Efecto de "acercamiento" y sombra ampliada al pasar el ratón */
+.graph-container:hover {
+    transform: scale(1.03); /* Escala ligeramente la tarjeta al pasar el mouse */
+}
+
+/* -------------------------------------------------------------
+    Estilos para el Botón de Cambio de Gráfico
+------------------------------------------------------------- */
+
+/* Botón de cambio de gráfico posicionado en la esquina superior izquierda */
+.btn-cambiar-grafico {
+    position: absolute;
+    top: 425px;
+    right: 30px;
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Color del texto */
+    border: 2px solid #0c0e22; /* Borde grueso */
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1; /* Asegura que el botón esté sobre el gráfico */
+}
+
+/* Cambio de color al pasar el ratón */
+.btn-cambiar-grafico:hover {
+    background-color: #166bb7;
+}
+
+/* -------------------------------------------------------------
+    Estilos para el Título de los Gráficos
+------------------------------------------------------------- */
+
+.graph-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* -------------------------------------------------------------
     Estilos de las tarjetas
 ------------------------------------------------------------- */
 .card {
@@ -117,6 +176,47 @@ body {
 }
 
 /* -------------------------------------------------------------
+    Estilo para las burbujas de texto (tooltips)
+------------------------------------------------------------- */
+.tooltip-text {
+    position: absolute;
+    bottom: -50px; /* Desplazamos un poco más hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra la burbuja */
+    background-color: rgba(0, 0, 0, 0.8);  /* Fondo más oscuro para mejor contraste */
+    color: #fff;  /* Texto blanco */
+    padding: 12px 18px;
+    border-radius: 8px;  /* Bordes redondeados más suaves */
+    font-size: 14px;
+    opacity: 0;  /* Oculto por defecto */
+    visibility: hidden;  /* Oculto por defecto */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil para un toque de profundidad */
+}
+
+/* Mostrar burbuja al pasar el mouse */
+.card:hover .tooltip-text {
+    opacity: 1;  /* Hace visible la burbuja */
+    visibility: visible;  /* La hace visible */
+    transform: translateX(-50%) translateY(-10px);  /* Mueve un poco hacia arriba para un mejor efecto */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada cuando se activa */
+}
+
+/* Efecto suave de desvanecimiento */
+.card:hover .tooltip-text {
+    animation: tooltip-fade 0.3s ease-out;
+}
+
+@keyframes tooltip-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------------------------------------------------------------
     Estilos para las barras de progreso
 ------------------------------------------------------------- */
 /* Línea de progreso estilo "slider" específica para cada tarjeta */
@@ -168,35 +268,26 @@ body {
 ------------------------------------------------------------- */
 /* Efecto de "destello luminoso" en el indicador */
 @keyframes progress-glow {
-    /* Estado inicial y final (0% y 100%): "aura" discreta alrededor del círculo */
     0%, 100% {
         box-shadow: 
-            0 0 8px rgba(255, 255, 255, 0.5),   /* Capa blanca suave para un brillo tenue */
-            0 0 12px rgba(64, 224, 208, 0.3),   /* Capa de color primario más ligera y cercana */
-            0 0 18px rgba(64, 224, 208, 0.2);   /* Capa más difusa y sutil para un halo suave */
+            0 0 8px rgba(255, 255, 255, 0.5),
+            0 0 12px rgba(64, 224, 208, 0.3),
+            0 0 18px rgba(64, 224, 208, 0.2);
     }
-    /* Punto medio (50%): leve aumento en la intensidad y tamaño del "aura" para un destello discreto */
     50% {
         box-shadow: 
-            0 0 10px rgba(255, 255, 255, 0.6),  /* Capa blanca un poco más intensa, pero no llamativa */
-            0 0 15px rgba(64, 224, 208, 0.4),   /* Capa de color primario apenas visible */
-            0 0 22px rgba(64, 224, 208, 0.3);   /* Capa difusa suave y elegante */
+            0 0 10px rgba(255, 255, 255, 0.6),
+            0 0 15px rgba(64, 224, 208, 0.4),
+            0 0 22px rgba(64, 224, 208, 0.3);
     }
 }
 
-/* Efecto de "destello" de movimiento en la barra de progreso */
 @keyframes shine {
-    /* El fondo del gradiente se desplaza de izquierda a derecha */
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
 }
 
-/* Animación para llenar la barra de progreso */
 @keyframes fill-bar {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 80%; /* Tamaño final de la barra */
-    }
+    0% { width: 0; }
+    100% { width: 80%; }
 }

@@ -1,9 +1,9 @@
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
-from paginas import resumen_general  # Importa el archivo resumen_general
+from paginas import resumen_general, kpi_1
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, suppress_callback_exceptions=True)
 
 # Definir la estructura básica
 app.layout = html.Div([
@@ -41,7 +41,7 @@ def display_page(pathname):
     if pathname == '/':
         return resumen_general.layout(), active_link, normal_link, normal_link, normal_link, normal_link
     elif pathname == '/acceso-a-internet':
-        return html.Div([html.H3('Página de Acceso a Internet')]), normal_link, active_link, normal_link, normal_link, normal_link
+        return kpi_1.layout(), normal_link, active_link, normal_link, normal_link, normal_link
     elif pathname == '/cobertura-fibra':
         return html.Div([html.H3('Página de Cobertura de Fibra Óptica')]), normal_link, normal_link, active_link, normal_link, normal_link
     elif pathname == '/planes-pospago':

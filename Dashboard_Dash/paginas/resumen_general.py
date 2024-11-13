@@ -5,7 +5,7 @@ from dash import html
 def layout():
     return html.Div([  # El contenido que ya tenías en app.py
         # Presentación en la parte superior
-        html.Div([
+        html.Div([  
             html.H2("Análisis de Conectividad en Argentina", style={"text-align": "center", "margin-bottom": "10px"}),
             html.P(
                 "Este dashboard presenta un análisis sobre el sector de telecomunicaciones en Argentina. "
@@ -17,6 +17,7 @@ def layout():
 
         # Contenedor para centrar las tarjetas
         html.Div([
+
             # Tarjeta KPI 1 - Acceso a Internet
             html.Div([
                 html.Div([
@@ -25,7 +26,11 @@ def layout():
                     html.H1("2%"),  # Valor de ejemplo
                     html.P("Proyección trimestral"),
                     html.Img(src="/assets/wifi-router.png", className="card-icon"),
-                    html.Div([html.Div(className="progress-slider")], className="progress-bar")
+                    html.Div([html.Div(className="progress-slider")], className="progress-bar"),
+                    html.Div(
+                        "Proyección de un aumento del 2% en el acceso a internet por cada 100 hogares en las distintas provincias.", 
+                        className="tooltip-text"
+                    )
                 ], className="card card-acceso-internet", id='card-acceso-internet')
             ], style={"flex": "1", "margin": "10px"}),
 
@@ -37,7 +42,11 @@ def layout():
                     html.H1("10%"),  # Valor de ejemplo
                     html.P("Proyección trimestral"),
                     html.Img(src="/assets/Infraestructure.png", className="card-icon"),
-                    html.Div([html.Div(className="progress-slider")], className="progress-bar")
+                    html.Div([html.Div(className="progress-slider")], className="progress-bar"),
+                    html.Div(
+                        "Aumento del 10% trimestral en la cobertura de tecnologías avanzadas (fibra óptica) en provincias con menor acceso.",
+                        className="tooltip-text"
+                    )
                 ], className="card card-cobertura-fibra", id='card-cobertura-fibra')
             ], style={"flex": "1", "margin": "10px"}),
 
@@ -49,8 +58,13 @@ def layout():
                     html.H1("5%"),  # Valor de ejemplo
                     html.P("Proyección trimestral"),
                     html.Img(src="/assets/mobile.png", className="card-icon"),
-                    html.Div([html.Div(className="progress-slider")], className="progress-bar")
+                    html.Div([html.Div(className="progress-slider")], className="progress-bar"),
+                    html.Div(
+                        "Proyección de un aumento del 5% en los accesos a líneas pospago durante el próximo trimestre.",
+                        className="tooltip-text"
+                    )
                 ], className="card card-planes-pospago", id='card-planes-pospago')
             ], style={"flex": "1", "margin": "10px"}),
+
         ], style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"})
     ])
