@@ -3,7 +3,9 @@ datasets/
 
 # Ignorar el entorno virtual
 proyectoII_env/
-
+__pycache__
+.devcontainer
+credenciales.env
 # dashboard Power BI
 Presentación_KPIs.pbix
 
@@ -12,3 +14,5 @@ normalizarGeoJSON.ipynb
 
 # Mapa:
 dashboard/Mapa
+
+Dashboard_Streamlit/
