@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------
+    Estilos Generales de las Tarjetas y Tooltips
+------------------------------------------------------------- */
+.card {
+    padding: 20px; /* Espacio interno para el contenido de la tarjeta */
+    border-radius: 0px; /* Apariencia cuadrada en los bordes */
+    color: #fff;
+    text-align: left;
+    position: relative;
+    overflow: visible; /* Permite que el contenido adicional como tooltips sobresalga */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para crear profundidad */
+    padding-bottom: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.card:hover {
+    background-color: #444; /* Color de fondo más oscuro cuando se coloca el cursor */
+    transform: scale(1.05); /* Efecto de ampliación sutil en el hover */
+}
+
+/* Tarjetas con fondo degradado por KPI */
+.card-acceso-internet {
+    background: linear-gradient(to right, rgba(74, 144, 226, 1), rgba(74, 144, 226, 0.3)); /* Azul para Acceso a Internet */
+}
+
+.card-cobertura-fibra {
+    background: linear-gradient(to right, rgba(243, 156, 18, 1), rgba(243, 156, 18, 0.3)); /* Naranja para Cobertura de Fibra */
+}
+
+.card-planes-pospago {
+    background: linear-gradient(to right, rgba(142, 68, 173, 1), rgba(142, 68, 173, 0.3)); /* Púrpura para Planes Pospago */
+}
+
+/* Tooltip de texto */
+.tooltip-text {
+    position: absolute;
+    bottom: -50px; /* Desplazamos un poco más hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);  /* Centra el tooltip en relación al elemento */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para contraste */
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px; /* Bordes redondeados para una apariencia moderna */
+    font-size: 14px;
+    opacity: 0; /* Oculto inicialmente */
+    visibility: hidden; /* Evita mostrarlo hasta la interacción */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra sutil para efecto de profundidad */
+}
+
+.card:hover .tooltip-text {
+    opacity: 1; /* Hace visible la burbuja */
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px); /* Desplaza hacia arriba para un efecto mejorado */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra intensificada cuando está visible */
+    animation: tooltip-fade 0.3s ease-out; /* Efecto suave de desvanecimiento */
+}
+
+/* -------------------------------------------------------------
+    Íconos en las tarjetas 
+------------------------------------------------------------- */
+.card-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 45%; /* Escala proporcional para ocupar un espacio visible sin sobrecargar */
+    opacity: 0.1; /* Transparencia para que no distraiga del contenido principal */
+    transform: translate(-50%, -50%); /* Centra el ícono en la tarjeta */
+}
+
+.card-icon-small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px; /* Ícono más pequeño en la esquina */
+    opacity: 0.8; /* Transparencia leve para integración en el diseño */
+}

@@ -1,0 +1,47 @@
+/* -------------------------------------------------------------
+    Estilos de las barras de progreso
+------------------------------------------------------------- */
+
+/* Línea de progreso estilo "slider" específica para cada tarjeta */
+.card-acceso-internet .progress-bar {
+    background: linear-gradient(to right, rgb(164, 191, 221), rgba(74, 144, 226, 0.6)); /* Degradado azul */
+}
+
+.card-cobertura-fibra .progress-bar {
+    background: linear-gradient(to right, rgb(235, 171, 69), rgba(243, 156, 18, 0.6)); /* Degradado naranja */
+}
+
+.card-planes-pospago .progress-bar {
+    background: linear-gradient(to right, rgb(167, 113, 190), rgba(142, 68, 173, 0.6)); /* Degradado púrpura */
+}
+
+/* Barra de progreso general */
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; /* Ajusta el ancho de la barra para que se alinee bien con el diseño */
+    height: 5px; /* Altura de la barra para que sea más delgada */
+    background: linear-gradient(to right, rgba(64, 224, 208, 1), rgba(64, 224, 208, 0.5), rgba(64, 224, 208, 0)); /* Degradado de la barra */
+    background-size: 200% 100%; /* Permite el efecto de deslizamiento del gradiente */
+    animation: fill-bar 3s ease forwards; /* Animación de llenado */
+    border-radius: 2px; /* Suavizado de bordes */
+    overflow: visible; /* Permite que el indicador al final sobresalga */
+}
+
+/* Indicador circular al final de la barra de progreso. Añade un círculo al final con efectos de sombra para un aspecto de "destello" */
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -12px; /* Permite que el círculo sobresalga de la tarjeta */
+    transform: translateY(-50%); /* Centrado verticalmente en la barra */
+    width: 14px; /* Tamaño del círculo indicador */
+    height: 14px;
+    background: #ffffff; /* Color blanco para destacar */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 
+                0 0 15px rgba(64, 224, 208, 0.8), 
+                0 0 20px rgba(64, 224, 208, 0.8); /* Sombras para el efecto de "aura" */
+    animation: progress-glow 3s infinite ease-in-out; /* Efecto de "brillo" intermitente */
+}

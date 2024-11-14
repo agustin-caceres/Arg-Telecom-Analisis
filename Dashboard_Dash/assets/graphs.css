@@ -1,0 +1,83 @@
+/* -------------------------------------------------------------
+    Estilos Generales para los Contenedores de Gráficos
+------------------------------------------------------------- */
+
+/* Contenedor de gráficos estilo tarjeta para el gráfico de barras KPI-1 */
+.graph-container {
+    background: linear-gradient(45deg, #0c0e22, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #0F4C75; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: -5px; /* Margen inferior para espaciar tarjetas */
+    margin-top: -20px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    display: inline-block; /* Se muestra en línea y como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-height: 400px; /* Altura máxima para consistencia en el diseño */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+/* Efecto de "zoom" al pasar el cursor sobre la tarjeta de gráfico de barras */
+.graph-container:hover {
+    transform: scale(1.01);
+}
+
+/* Contenedor específico para el gráfico de líneas KPI-1 */
+.line-graph-container {
+    background: linear-gradient(45deg, #09090e, #09090e); /* Fondo degradado similar */
+    border-radius: 8px; /* Bordes redondeados para consistencia */
+    box-shadow: 0 0px 12px #0F4C75; /* Sombra */
+    border: 3px solid #1B262C;
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
+    margin-top: -50px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease;
+    display: inline-block;
+    width: 48%; /* Ocupa la mitad del ancho en la fila */
+    height: 300px; /* Ajuste de altura */
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Configuración para gráficos internos */
+.graph-container dcc.Graph,
+.line-graph-container dcc.Graph {
+    height: 100%;
+}
+
+/* Efecto de "zoom" al pasar el cursor sobre la tarjeta de gráfico de líneas */
+.line-graph-container:hover {
+    transform: scale(1.01);
+}
+
+/* -------------------------------------------------------------
+    Contenedor para el título y el dropdown alineados horizontalmente
+------------------------------------------------------------- */
+.graph-header {
+    display: flex; /* Alineación horizontal */
+    justify-content: space-between; /* Espacio entre el título y el dropdown */
+    align-items: center; /* Centrado vertical de los elementos */
+    padding: 0 10px; /* Espacio interior para el contenedor */
+    margin-bottom: 0px; /* Sin margen inferior para un ajuste preciso */
+}
+
+/* Título del gráfico */
+.graph-title {
+    text-align: left; /* Alineación a la izquierda */
+    font-size: 15px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+}
+
+/* Ajustes para el dropdown estilo botón */
+.dropdown-button {
+    width: 110px; /* Ancho ajustado */
+    color: white; /* Color del texto */
+    background-color: #09090e; /* Fondo oscuro */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno de foco */
+    border-radius: 5px; /* Bordes suaves */
+    padding: 5px; /* Espacio interior */
+    box-shadow: none; /* Sin sombra para evitar "cajas dobles" */
+}

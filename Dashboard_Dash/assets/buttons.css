@@ -1,0 +1,89 @@
+/* -------------------------------------------------------------
+    Botón de Cambio de Gráfico y Dropdown Estilo Botón
+------------------------------------------------------------- */
+.btn-cambiar-grafico,
+.dropdown-button .Select-control {
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #0F4C75; /* Borde en color oscuro */
+    border-radius: 8px; /* Bordes redondeados */
+    color: #e0e0e0; /* Color del texto */
+    font-size: 13px; /* Tamaño de fuente */
+    padding: 5px 10px; /* Espacio interno */
+    cursor: pointer; /* Cursor de mano */
+    transition: all 0.3s ease; /* Transición suave */
+    text-align: left; /* Alineación a la izquierda */
+    display: flex; /* Modo flex para alinear texto y flecha */
+    align-items: center; /* Centrado vertical del contenido */
+    width: auto; /* Ajuste dinámico del ancho */
+    min-width: 100px; /* Ancho mínimo para nombres cortos */
+    max-width: 180px; /* Ancho máximo para evitar desbordamientos */
+}
+
+/* Configuración específica para el botón de cambio de gráfico */
+.btn-cambiar-grafico {
+    position: absolute;
+    top: 267px; /* Posición vertical */
+    right: 15px; /* Posición horizontal */
+    border-radius: 20px; /* Bordes más redondeados */
+    font-size: 14px; /* Tamaño de fuente más grande */
+    z-index: 1; /* Prioridad de visualización */
+}
+
+.btn-cambiar-grafico:hover {
+    background: linear-gradient(45deg, #0F4C75, #1c1d38); /* Fondo degradado en hover */
+    border-color: #05DFD7; /* Color de borde en hover */
+}
+
+/* Hover en dropdown estilo botón */
+.dropdown-button .Select-control:hover {
+    background: linear-gradient(45deg, #0F4C75, #1c1d38); /* Fondo degradado en hover */
+    border-color: #05DFD7; /* Borde en hover */
+}
+
+/* Flecha y alineación en el dropdown */
+.dropdown-button .Select-arrow-zone {
+    display: flex;
+    align-items: center; /* Centra verticalmente la flecha */
+    margin-left: auto; /* Empuja la flecha hacia el extremo derecho */
+    padding-left: 5px; /* Ajuste de espacio entre el texto y la flecha */
+}
+
+.dropdown-button .Select-arrow {
+    color: white; /* Color de la flecha */
+    font-size: 12px; /* Ajusta el tamaño de la flecha */
+    margin-left: 5px; /* Ajuste fino para mayor separación */
+    transform: translateY(1px); /* Ajuste de posición vertical */
+    transition: transform 0.3s ease; /* Animación de rotación */
+}
+
+/* Placeholder y texto de selección en el dropdown */
+.dropdown-button .Select-placeholder,
+.dropdown-button .Select-value-label {
+    color: #e0e0e0 !important; /* Color del texto en selección y placeholder */
+    margin-right: 5px; /* Espacio entre el texto y el borde */
+}
+
+/* -------------------------------------------------------------
+    Estilos para el Menú y Opciones del Dropdown
+------------------------------------------------------------- */
+.dropdown-button .Select-menu-outer {
+    background-color: rgba(11, 12, 29, 0.9); /* Fondo oscuro y semitransparente */
+    color: white; /* Color del texto */
+    max-width: 150px; /* Ancho máximo del menú */
+    font-size: 12px; /* Tamaño de fuente reducido */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #0F4C75; /* Borde del menú */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del menú */
+}
+
+/* Estilo para cada opción del dropdown */
+.dropdown-button .Select-option {
+    background-color: #1c1d38; /* Fondo de las opciones */
+    color: white; /* Color del texto */
+    padding: 8px 10px; /* Espacio de cada opción */
+    transition: background-color 0.3s ease; /* Transición en hover */
+}
+
+.dropdown-button .Select-option:hover {
+    background-color: #0F4C75; /* Color de fondo en hover */
+}

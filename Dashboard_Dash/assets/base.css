@@ -1,0 +1,8 @@
+/* -------------------------------------------------------------
+    Estilos globales: Fondo y tipografía
+------------------------------------------------------------- */
+body {
+    background-color: #09090e; /* Fondo oscuro para todo el dashboard */
+    color: #e0e0e0; /* Color de texto claro para buen contraste */
+    font-family: 'Roboto', sans-serif; /* Fuente general del texto */
+}

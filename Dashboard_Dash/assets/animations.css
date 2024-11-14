@@ -1,0 +1,45 @@
+/* -------------------------------------------------------------
+    Animaciones
+------------------------------------------------------------- */
+
+/* Animación de subrayado en enlaces utilizada para resaltar enlaces activos mediante una transición suave en la barra de subrayado */
+@keyframes underlineAnimation {
+    0% { width: 0%; } /* Comienza sin subrayado */
+    100% { width: 100%; } /* Termina cubriendo el ancho del enlace */
+}
+
+/* Animación de fade-in para tooltips. Hace que las burbujas de texto (tooltips) aparezcan suavemente al interactuar */
+@keyframes tooltip-fade {
+    0% { opacity: 0; } /* Tooltip completamente invisible al inicio */
+    100% { opacity: 1; } /* Totalmente visible al finalizar */
+}
+
+/* Efecto de "brillo" en el indicador de barra de progreso. Crea una "aura" alrededor del indicador final en la barra de progreso */
+@keyframes progress-glow {
+    0%, 100% {
+        /* Empieza y termina con una sombra leve */
+        box-shadow: 
+            0 0 8px rgba(255, 255, 255, 0.5),
+            0 0 12px rgba(64, 224, 208, 0.3),
+            0 0 18px rgba(64, 224, 208, 0.2);
+    }
+    50% {
+        /* En el punto medio, aumenta el "brillo" para intensificar el efecto */
+        box-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.6),
+            0 0 15px rgba(64, 224, 208, 0.4),
+            0 0 22px rgba(64, 224, 208, 0.3);
+    }
+}
+
+/* Efecto de deslizamiento en fondos con gradiente. Hace que el gradiente de fondo se desplace, usado para efectos visuales en tarjetas o fondos */
+@keyframes shine {
+    0% { background-position: -200% 0; } /* Comienza fuera del elemento */
+    100% { background-position: 200% 0; } /* Finaliza después de recorrer todo el fondo */
+}
+
+/* Animación de llenado para barras de progreso. Da un efecto suave de "relleno" al cargar la barra de progreso */
+@keyframes fill-bar {
+    0% { width: 0; } /* Inicia vacío */
+    100% { width: 80%; } /* Se completa hasta el 80% para crear un efecto de progreso */
+}
