@@ -16,15 +16,16 @@ El análisis incluye:
   - Extracción, Transformación y Carga de los Datos (ETL)
   - Análisis exploratorio de datos (EDA)
   - Creación de la Base de Datos SQL
-- **📁 Dashboard/**:
-  - Dashboard interactivo creado con Streamlit.
-  - Archivo GeoJSON con el mapa de Argentina necesario en gráficos de mapa.
-- **📁 assets/: contiene la imagen ERD.
+- **📁 Dashboard_Dash/**:
+  - Dashboard interactivo creado con Dash.
+- **📁 Dashboard_Streamlit/**:
+  - Dashboard interactivo creado con Dash.
+- **📁 assets/: Archivos estáticos como imágenes y GeoJSON con el mapa de Argentina
 - **📝 LICENSE**: Contiene la licencia MIT bajo la cual se distribuye este proyecto.
 
 ## 🎯 **KPIs Definidos**
 
-![KPIs](assets/KPIs.png)
+![KPIs](assets/Inicio.png)
 
 ### **📈 KPI 1: Aumentar el acceso a Internet en un 2% por provincia**
 
