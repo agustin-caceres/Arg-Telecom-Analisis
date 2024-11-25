@@ -8,7 +8,6 @@
     text-align: left;
     position: relative;
     overflow: visible; /* Permite que el contenido adicional como tooltips sobresalga */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra para crear profundidad */
     padding-bottom: 30px;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Animación al pasar el ratón */
 }
@@ -20,15 +19,18 @@
 
 /* Tarjetas con fondo degradado por KPI */
 .card-acceso-internet {
-    background: linear-gradient(to right, rgba(74, 144, 226, 1), rgba(74, 144, 226, 0.3)); /* Azul para Acceso a Internet */
+    background: linear-gradient(to right, #4a90e2, #4a90e24d); /* Azul para Acceso a Internet */
+    box-shadow: 0px 0px 8px #0000004d, 0px 0px 12px rgba(74, 144, 226, 0.5); /* Glow azul */
 }
 
 .card-cobertura-fibra {
-    background: linear-gradient(to right, rgba(243, 156, 18, 1), rgba(243, 156, 18, 0.3)); /* Naranja para Cobertura de Fibra */
+    background: linear-gradient(to right, #f39c12, #f39c124d); /* Naranja para Cobertura de Fibra */
+    box-shadow: 0px 0px 8px #0000004d, 0px 0px 12px rgba(243, 156, 18, 0.5); /* Glow naranja */
 }
 
 .card-planes-pospago {
-    background: linear-gradient(to right, rgba(142, 68, 173, 1), rgba(142, 68, 173, 0.3)); /* Púrpura para Planes Pospago */
+    background: linear-gradient(to right, #8e44ad, #8e44ad4d); /* Púrpura para Planes Pospago */
+    box-shadow: 0px 0px 8px #0000004d, 0px 0px 12px rgba(142, 68, 173, 0.5); /* Glow púrpura */
 }
 
 /* Tooltip de texto */

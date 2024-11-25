@@ -52,14 +52,14 @@ Este dashboard fue diseñado para proporcionar una interfaz visual amigable y el
 
 A continuación, se presentan algunas capturas de pantalla del dashboard en funcionamiento:
 
-<div align="center">
-  <img src="ruta_a_tu_imagen.png" alt="Vista General del Dashboard" width="500">
-</div>
+![KPI_1](../assets/KPI_1.png)
+![KPI_2](../assets/KPI_2.png)
+![KPI_2](../assets/KPI_3.png)
 
 ## 📬 Contribuciones
 
 Las contribuciones para mejorar esta app son bienvenidas. Si tienes ideas para mejorar el código, el diseño visual o la estructura del dashboard, por favor, envía un pull request o abre un issue.
 
 <div align="center">
-<img src="https://www.greghilston.com/post/how-to-use-plotly-plotly-express-and-dash-with-jupyterlab/featured-image.png" alt="Dash Logo" width="150">
+<img src="https://www.greghilston.com/post/how-to-use-plotly-plotly-express-and-dash-with-jupyterlab/featured-image.png" alt="Dash Logo" width="200">
 </div>

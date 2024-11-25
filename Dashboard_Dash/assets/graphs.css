@@ -4,11 +4,11 @@
 
 /* Contenedor de gráficos estilo tarjeta para el gráfico de barras KPI-1 */
 .graph-container {
-    background: linear-gradient(45deg, #0c0e22, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    background: linear-gradient(45deg, #220c0c, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
     border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
     box-shadow: 0 0px 12px #0F4C75; /* Sombra para profundidad y realce */
     border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
-    margin-bottom: -5px; /* Margen inferior para espaciar tarjetas */
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
     margin-top: -20px; /* Margen superior negativo para ajustar la posición */
     transition: transform 0.3s ease; /* Suave animación al escalar */
     display: inline-block; /* Se muestra en línea y como bloque */
@@ -31,10 +31,10 @@
     box-shadow: 0 0px 12px #0F4C75; /* Sombra */
     border: 3px solid #1B262C;
     margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
-    margin-top: -50px; /* Margen superior negativo para ajustar la posición */
+    margin-top: 15px; /* Margen superior negativo para ajustar la posición */
     transition: transform 0.3s ease;
     display: inline-block;
-    width: 48%; /* Ocupa la mitad del ancho en la fila */
+    width: 100%; /* Ocupa la mitad del ancho en la fila */
     height: 300px; /* Ajuste de altura */
     padding: 0px;
     box-sizing: border-box;
@@ -81,3 +81,135 @@
     padding: 5px; /* Espacio interior */
     box-shadow: none; /* Sin sombra para evitar "cajas dobles" */
 }
+
+/* -------------------------------------------------------------
+    Estilo para el contenedor del gráfico de mapa
+------------------------------------------------------------- */
+.map-graph-container {
+    background: linear-gradient(45deg, #0c0e22, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #0F4C75; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 0px; /* Ajustado para espaciar mejor los gráficos */
+    margin-top: 15px; /* Eliminamos margen negativo */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    width: 100%; /* Asegura que ocupe el 100% de su columna */
+    height: 300px; /* Ajustado para que la altura sea consistente con otros gráficos */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+/* Efecto de "zoom" al pasar el cursor sobre la tarjeta de gráfico de mapa */
+.map-graph-container:hover {
+    transform: scale(1.01);
+}
+
+
+
+
+/* Contenedor de gráficos estilo tarjeta para el gráfico de barras horizontales KPI-3*/
+.bar-graph-container {
+    background: linear-gradient(45deg, #220c0c, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #c963f3; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
+    margin-top: -20px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    display: inline-block; /* Se muestra en línea y como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-height: 300px; /* Altura máxima para consistencia en el diseño */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+/* Efecto de "zoom" al pasar el cursor sobre la tarjeta de gráfico de barras */
+.bar-graph-container:hover {
+    transform: scale(1.01);
+}
+
+/* Contenedor específico para el gráfico de líneas KPI-3 */
+.line-graph-kpi3-container {
+    background: linear-gradient(45deg, #220c0c, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #c963f3; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
+    margin-top: 15px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    display: inline-block; /* Se muestra en línea y como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-height: 300px; /* Altura máxima para consistencia en el diseño */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+.line-graph-kpi3-container:hover {
+    transform: scale(1.01);
+}
+
+
+/* Contenedor de gráficos estilo tarjeta para el gráfico de barras horizontales KPI-2*/
+.bar2-graph-container {
+    background: linear-gradient(45deg, #220c0c, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #ec9914; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
+    margin-top: -20px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    display: inline-block; /* Se muestra en línea y como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-height: 620px; /* Altura máxima para consistencia en el diseño */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+.bar2-graph-container:hover {
+    transform: scale(1.01);
+}
+
+.bar3-graph-container  {
+    background: linear-gradient(45deg, #0c0e22, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #ec9914; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 10x; /* Margen inferior para espaciar tarjetas */
+    margin-top: -20px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    width: 100%; /* Asegura que ocupe el 100% de su columna */
+    height: 200px; /* Ajustado para que la altura sea consistente con otros gráficos */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+/* Efecto de "zoom" al pasar el cursor sobre la tarjeta de gráfico de mapa */
+.map3-graph-container:hover {
+    transform: scale(1.01);
+}
+
+.map3-graph-container {
+    background: linear-gradient(45deg, #220c0c, #1c1d38); /* Fondo con degradado para un aspecto sofisticado */
+    border-radius: 8px; /* Bordes suaves para un diseño de tarjeta */
+    box-shadow: 0 0px 12px #ec9914; /* Sombra para profundidad y realce */
+    border: 3px solid #1B262C; /* Borde oscuro que separa el gráfico del fondo */
+    margin-bottom: 0px; /* Margen inferior para espaciar tarjetas */
+    margin-top: 10px; /* Margen superior negativo para ajustar la posición */
+    transition: transform 0.3s ease; /* Suave animación al escalar */
+    display: inline-block; /* Se muestra en línea y como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-height: 300px; /* Altura máxima para consistencia en el diseño */
+    padding: 0px; /* Sin relleno interno para aprovechar espacio */
+    box-sizing: border-box; /* Incluye bordes y rellenos en el ancho total */
+    position: relative; /* Permite la colocación de elementos como botones dentro del contenedor */
+}
+
+.bar3-graph-container:hover {
+    transform: scale(1.01);
+}
+

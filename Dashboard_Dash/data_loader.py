@@ -149,3 +149,24 @@ def cargar_datos_accesos_movil():
     df = pd.read_sql(query, conn)
     conn.close()
     return df
+
+
+# Función para generar el DataFrame
+def get_provinces_data():
+    df = {
+        "Province Code": ["AR-C", "AR-B", "AR-K", "AR-H", "AR-U", "AR-X", "AR-W", "AR-E", "AR-P", "AR-Y", 
+                          "AR-L", "AR-F", "AR-M", "AR-N", "AR-Q", "AR-R", "AR-A", "AR-J", "AR-D", "AR-Z", 
+                          "AR-S", "AR-G", "AR-V", "AR-T"],
+        "Province Name": ["CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", 
+                          "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", 
+                          "Neuquén", "Río Negro", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe", 
+                          "Santiago del Estero", "Tierra del Fuego", "Tucumán"],
+        "Value": [10, 20, 15, 30, 25, 40, 35, 50, 5, 45, 15, 20, 60, 55, 70, 65, 80, 75, 90, 85, 100, 95, 110, 105],
+        "Latitude": [-34.6037, -36.6769, -28.4696, -27.4519, -43.7924, -31.4173, -27.4692, -32.0586, -26.1775, -24.1858, 
+                     -36.6167, -29.4146, -32.8908, -27.3769, -38.9516, -40.8116, -24.7821, -30.8654, -33.3012, -49.3167, 
+                     -31.6333, -27.7834, -54.8019, -26.8241],
+        "Longitude": [-58.3816, -60.5588, -65.7852, -58.9867, -67.8076, -64.183, -58.8341, -60.4803, -58.1781, -65.3002, 
+                      -64.2833, -66.8556, -68.8458, -55.8961, -68.0591, -63.0000, -65.4232, -68.8896, -66.3378, -67.7333, 
+                      -60.7, -63.2513, -68.3030, -65.2226]
+    }
+    return pd.DataFrame(df)
