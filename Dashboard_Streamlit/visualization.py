@@ -224,7 +224,7 @@ def graficar_mapa_penetracion(df_penetracion_provincia, geojson_path):
         name="Penetración de Internet",
         data=df_penetracion_provincia.set_index('nombre_provincia'),
         columns=[df_penetracion_provincia.set_index('nombre_provincia').index, 'promedio_accesos'],
-        key_on="feature.properties.nombre",  # Usar la clave correcta del GeoJSON
+        key_on="feature.properties.NAME_1",  # Usar la clave correcta del GeoJSON
         fill_color="YlGnBu",
         fill_opacity=0.7,
         line_opacity=0.2,
@@ -233,7 +233,7 @@ def graficar_mapa_penetracion(df_penetracion_provincia, geojson_path):
 
     # Añadir tooltips personalizados para cada provincia
     for feature in geojson_data['features']:
-        nombre_provincia = feature['properties']['nombre'].lower()
+        nombre_provincia = feature['properties']['NAME_1'].lower()
         penetracion = df_penetracion_provincia.set_index('nombre_provincia').get('promedio_accesos').get(nombre_provincia, 'No data')
         
         popup_text = f"{nombre_provincia.capitalize()}: {penetracion:.2f} accesos por 100 hogares" if penetracion != 'No data' else f"{nombre_provincia.capitalize()}: No data"
@@ -370,7 +370,7 @@ def graficar_mapa_cobertura_fibra(df, geojson_path):
         name="Cobertura de Fibra Óptica",
         data=cobertura_provincia,
         columns=[cobertura_provincia.index, cobertura_provincia],
-        key_on="feature.properties.nombre",  # Clave en el GeoJSON que corresponde con las provincias
+        key_on="feature.properties.NAME_1",  # Clave en el GeoJSON que corresponde con las provincias
         fill_color="YlGnBu",
         fill_opacity=0.7,
         line_opacity=0.2,
@@ -379,7 +379,7 @@ def graficar_mapa_cobertura_fibra(df, geojson_path):
 
     # Añadir tooltips personalizados con nombre y porcentaje de cobertura
     for feature in geojson_data['features']:
-        nombre_provincia = feature['properties']['nombre'].lower()  # Aseguramos que coincide en minúsculas
+        nombre_provincia = feature['properties']['NAME_1'].lower()  # Aseguramos que coincide en minúsculas
         cobertura = cobertura_provincia.get(nombre_provincia, 'No data')
         
         # Crear el texto para el tooltip

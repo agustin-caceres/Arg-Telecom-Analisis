@@ -8,7 +8,7 @@ def display():
     # Cargar los datos de penetración general y mapa
     df_penetracion = load_internet_penetration_data()
     df_penetracion_mapa = cargar_datos_penetracion_mapa()
-    geojson_path = 'Dashboard_Streamlit/ProvinciasArgentina_actualizado.geojson'
+    geojson_path = 'assets/argentina_nivel_1_normalizado.geojson'
 
     # Mostrar gráficos iniciales
     st.subheader("Penetración de Internet por 100 Hogares (2023 en adelante)")
