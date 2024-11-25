@@ -1,4 +1,4 @@
-# 📊 Dashboard de Análisis de Conectividad en Argentina - Versión Dash
+# Dashboard de Análisis de Conectividad en Argentina
 
 Este repositorio contiene una aplicación interactiva desarrollada con Dash para analizar la conectividad en Argentina. El dashboard se centra en tres KPIs clave, relacionados con la penetración de internet, la cobertura de fibra óptica y el uso de planes pospago. La app ofrece visualizaciones personalizadas, proporcionando insights valiosos para la mejora de la conectividad en distintas provincias.
 
@@ -12,14 +12,14 @@ La app se organiza en cinco secciones principales:
 - **📱 KPI 3 - Aumento en Planes Pospago**: Análisis del crecimiento en accesos a planes de telefonía móvil pospago, comparado con los planes prepago.
 - **📌 Conclusiones y Recomendaciones**: Resumen de los hallazgos clave y recomendaciones para mejorar la conectividad, basadas en los tres KPIs analizados.
 
-## 📦 Requerimientos
+## ⚙️ Requerimientos
 
 La app utiliza las siguientes librerías:
 
 - `dash`: Framework principal para la creación de aplicaciones web interactivas.
 - `dash_core_components`: Componentes esenciales para gráficos y controles.
 - `dash_html_components`: Componentes HTML en Dash.
-- `dash_bootstrap_components` (opcional): Para mejorar el estilo y diseño visual.
+- `dash_bootstrap_components`: Para mejorar el estilo y diseño visual.
 - `plotly`: Librería para generar gráficos interactivos.
 - `pandas`: Manipulación y análisis de datos.
 - `psycopg2`: Para la conexión a la base de datos PostgreSQL.
